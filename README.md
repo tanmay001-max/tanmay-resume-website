@@ -17,6 +17,5 @@ Keep both files in the same folder and open `index.html` in a browser.
 
 ## Before submitting
 - Check that the name, course, college and email are correct.
-- Add LinkedIn/GitHub profile links only if you want to share real profiles.
 - Test the site on mobile and desktop.
 - Paste the real live website URL and repository URL into the assignment report.
