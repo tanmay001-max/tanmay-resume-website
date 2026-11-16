@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tanmay Udamale's student portfolio and resume.">
+  <title>Tanmay Udamale | Student Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home">TANMAY<span>.</span></a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <div class="nav-links">
+        <a href="#about">About</a><a href="#education">Education</a>
+        <a href="#skills">Skills</a><a href="#interests">Interests</a><a class="nav-cta" href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div>
+        <p class="eyebrow">STUDENT · DIGITAL BUSINESS · ENTREPRENEURSHIP</p>
+        <h1>Hi, I'm Tanmay.<br><span>I like building ideas.</span></h1>
+        <p class="intro">I'm studying Business Administration in Digital Business and Entrepreneurship at IIM Bangalore. I'm interested in how businesses work, how digital platforms grow, and how a simple idea can become something useful.</p>
+        <div class="actions"><a class="button primary" href="#about">A little about me</a><a class="button secondary" href="#contact">Get in touch ↗</a></div>
+        <p class="availability"><i></i> Open to learning opportunities and internships</p>
+      </div>
+      <div class="visual" aria-label="Decorative initials T U">
+        <div class="ring ring-a"></div><div class="ring ring-b"></div>
+        <div class="initials">T<span>U</span></div>
+        <p class="visual-note">Curious, learning<br>and figuring things out.</p>
+      </div>
+    </section>
+
+    <section class="section container" id="about">
+      <p class="eyebrow">01 / ABOUT</p><h2>A bit about me<span>.</span></h2>
+      <div class="two-col">
+        <h3>Interested in business, creativity and technology.</h3>
+        <div class="copy"><p>I'm a student in IIM Bangalore's Bachelor of Business Administration in Digital Business and Entrepreneurship (BBADBE) programme.</p><p>I enjoy exploring business ideas and digital tools, and I'm interested in learning by doing. I want to build practical skills, work with different people and understand how ideas can solve everyday problems.</p></div>
+      </div>
+    </section>
+
+    <section class="section tinted" id="education"><div class="container">
+      <p class="eyebrow">02 / EDUCATION</p><h2>Where I'm learning<span>.</span></h2>
+      <article class="education-item"><span class="tag">CURRENT</span><div><h3>Indian Institute of Management Bangalore</h3><p class="degree">BBA in Digital Business and Entrepreneurship (BBADBE)</p><p class="muted">Building a foundation in business, digital technologies and entrepreneurship.</p></div></article>
+      <article class="education-item"><span class="tag">CLASS XII</span><div><h3>U E S Jr. College</h3><p class="degree">Higher Secondary Education</p></div></article>
+    </div></section>
+
+    <section class="section container" id="skills">
+      <p class="eyebrow">03 / SKILLS</p><h2>Things I can work with<span>.</span></h2>
+      <div class="cards">
+        <article><span>01</span><h3>Video editing</h3><p>Editing video content and working on how a story is presented.</p></article>
+        <article><span>02</span><h3>Social media</h3><p>Understanding content formats, platforms and audience engagement.</p></article>
+        <article><span>03</span><h3>AI tools</h3><p>Exploring AI tools to support research, creativity and everyday tasks.</p></article>
+        <article><span>04</span><h3>Communication</h3><p>Working on clear communication and public speaking.</p></article>
+      </div>
+    </section>
+
+    <section class="section tinted" id="interests"><div class="container">
+      <p class="eyebrow">04 / INTERESTS</p><h2>What I'm curious about<span>.</span></h2>
+      <div class="interest-grid">
+        <div><b>01</b><h3>Entrepreneurship</h3><p>Exploring business ideas and ways to solve real problems.</p></div>
+        <div><b>02</b><h3>Digital business</h3><p>Learning how technology and digital platforms shape businesses.</p></div>
+        <div><b>03</b><h3>Finance & markets</h3><p>Developing my understanding of crypto and the Indian market.</p></div>
+      </div>
+    </div></section>
+
+    <section class="contact" id="contact"><div class="container">
+      <p class="eyebrow">05 / CONTACT</p><h2>Let's connect<span>.</span></h2>
+      <p>I'm open to conversations, learning opportunities and suitable internships.</p>
+      <a class="email" href="mailto:tanmayudamale16@gmail.com">tanmayudamale16@gmail.com ↗</a>
+      <p class="small-note">Add your own LinkedIn and GitHub profile links here when you have them.</p>
+    </div></section>
+  </main>
+  <footer><div class="container"><span>© 2026 Tanmay Udamale</span><span>Made with HTML & CSS</span></div></footer>
+  <script>
+    const menuButton = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    menuButton.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', String(isOpen));
+    });
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      menuButton.setAttribute('aria-expanded', 'false');
+    }));
+  </script>
+</body>
+</html>
